@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIEMPro</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar">
+        <div class="brand-block">
+          <p class="eyebrow">College Event Coordination Platform</p>
+          <h1>SIEMPro</h1>
+        </div>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#dashboard">Dashboard</a>
+        </nav>
+        <div class="topbar-actions">
+          <div id="loginBadge" class="login-badge">Not logged in</div>
+          <button id="refreshData" class="primary">Refresh</button>
+        </div>
+      </header>
+
+      <section class="hero-panel panel">
+        <div class="hero-copy">
+          <span class="tag">College event platform</span>
+          <h2>Manage registrations, volunteers, rules, and reports from one smart system.</h2>
+          <p>
+            SIEMPro is a complete college event coordination platform for organizing competitions,
+            tracking participation, assigning volunteers, and keeping everyone informed with live updates.
+          </p>
+          <div class="hero-actions">
+            <a href="#dashboard" class="btn-primary">Explore Dashboard</a>
+            <a href="#features" class="btn-secondary">View Features</a>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="mini-card">
+            <strong>Event Registration</strong>
+            <span>Fast onboarding</span>
+          </div>
+          <div class="mini-card">
+            <strong>Volunteer Support</strong>
+            <span>Smart assignment</span>
+          </div>
+          <div class="mini-card">
+            <strong>Live Coordination</strong>
+            <span>Rules & chat</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-grid" id="features">
+        <div class="feature-card panel">
+          <h3>Event Management</h3>
+          <p>Create events, add competitions, assign coordinators, and monitor capacity in real time.</p>
+        </div>
+        <div class="feature-card panel">
+          <h3>Participant Tracking</h3>
+          <p>Collect registrations, verify participation, and keep records organized by event and competition.</p>
+        </div>
+        <div class="feature-card panel">
+          <h3>Volunteer Coordination</h3>
+          <p>Assign volunteers, review skills, and manage responsibilities for each competition seamlessly.</p>
+        </div>
+      </section>
+
+      <section class="steps-panel panel" id="workflow">
+        <h2>How SIEMPro works</h2>
+        <div class="steps-grid">
+          <div class="step-box">
+            <span>01</span>
+            <h3>Create an Event</h3>
+            <p>Set the event date, venue, and competition schedule in minutes.</p>
+          </div>
+          <div class="step-box">
+            <span>02</span>
+            <h3>Register Participants</h3>
+            <p>Collect registration details and enforce competition capacity limits.</p>
+          </div>
+          <div class="step-box">
+            <span>03</span>
+            <h3>Assign Volunteers</h3>
+            <p>Match volunteers with the right role based on skills and availability.</p>
+          </div>
+          <div class="step-box">
+            <span>04</span>
+            <h3>Share Updates</h3>
+            <p>Post rules and chat messages so participants and coordinators stay aligned.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights-grid">
+        <div class="panel highlight-box">
+          <h3>Why colleges choose SIEMPro</h3>
+          <ul>
+            <li>Single platform for registrations and coordination</li>
+            <li>Role-based access for admins and coordinators</li>
+            <li>Live communication for event rules and clarifications</li>
+            <li>Report exports for participant and volunteer records</li>
+          </ul>
+        </div>
+        <div class="panel highlight-box accent-box">
+          <h3>Built for events</h3>
+          <p>
+            SIEMPro supports technical, cultural, sports, and campus-wide events by centralizing
+            participation management, volunteer support, and communication in one dashboard.
+          </p>
+        </div>
+      </section>
+
+      <section class="cta-panel panel">
+        <div>
+          <h2>Ready to organize your next college event?</h2>
+          <p>Use SIEMPro to reduce manual work and create a smoother, more organized experience for every participant.</p>
+        </div>
+        <a href="#dashboard" class="btn-primary">Open Dashboard</a>
+      </section>
+
+      <section class="about-panel panel">
+        <div>
+          <span class="tag">About the platform</span>
+          <h2>Built for colleges, clubs, and event teams.</h2>
+        </div>
+        <p>
+          SIEMPro is designed to handle every part of event execution — from registration to communication,
+          volunteer allocation, and reporting. It gives administrators a single place to coordinate competitions
+          and help participants stay informed at every stage.
+        </p>
+      </section>
+
+      <section class="showcase-panel panel">
+        <h2>What SIEMPro helps you do</h2>
+        <div class="showcase-grid">
+          <div class="showcase-item">
+            <strong>Plan events faster</strong>
+            <p>Draft event schedules and competition data without manual coordination.</p>
+          </div>
+          <div class="showcase-item">
+            <strong>Track participants</strong>
+            <p>Keep a complete view of registrations and competition-level participation.</p>
+          </div>
+          <div class="showcase-item">
+            <strong>Coordinate volunteers</strong>
+            <p>Assign people with the right skill set to the right roles.</p>
+          </div>
+          <div class="showcase-item">
+            <strong>Share updates instantly</strong>
+            <p>Use rules and chat to communicate important details to everyone involved.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel login-panel">
+        <h2>Admin Access</h2>
+        <form id="loginForm" class="inline-login">
+          <input type="text" id="loginUsername" placeholder="Username" required />
+          <input type="password" id="loginPassword" placeholder="Password" required />
+          <button type="submit">Login</button>
+          <button type="button" id="logoutBtn" class="secondary">Logout</button>
+        </form>
+      </section>
+
+      <footer class="site-footer">
+        <p>SIEMPro © 2026 — College Event Coordination Platform</p>
+      </footer>
+
+      <section class="panel stats-grid" id="dashboard" aria-label="Dashboard stats"></section>
+
+      <main class="layout">
+        <section class="panel">
+          <h2>Create Event</h2>
+          <form id="eventForm">
+            <input type="text" name="name" placeholder="Event name" required />
+            <input type="date" name="date" required />
+            <input type="text" name="location" placeholder="Location" required />
+            <textarea name="description" placeholder="Description"></textarea>
+            <button type="submit">Save Event</button>
+          </form>
+        </section>
+
+        <section class="panel">
+          <h2>Create Competition</h2>
+          <form id="competitionForm">
+            <select id="competitionEventSelect" name="event_id" required></select>
+            <select id="competitionCompetitionSelect" name="competition_id" style="display:none;"></select>
+            <input type="text" name="name" placeholder="Competition name" required />
+            <input type="text" name="time" placeholder="Date / time" required />
+            <input type="text" name="venue" placeholder="Venue" required />
+            <input type="number" name="capacity" min="1" placeholder="Capacity" required />
+            <input type="text" name="coordinator_name" placeholder="Coordinator name" required />
+            <textarea name="description" placeholder="Competition description"></textarea>
+            <textarea name="rules" placeholder="Competition rules and instructions"></textarea>
+            <button type="submit">Save Competition</button>
+          </form>
+        </section>
+      </main>
+
+      <main class="layout lower-grid">
+        <section class="panel">
+          <h2>Participant Registration</h2>
+          <form id="participantForm">
+            <select id="participantEventSelect" name="event_id" required></select>
+            <select id="participantCompetitionSelect" name="competition_id" required></select>
+            <input type="text" name="name" placeholder="Participant name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="phone" placeholder="Phone" required />
+            <input type="text" name="department" placeholder="Department" required />
+            <input type="text" name="year" placeholder="Year" required />
+            <input type="text" name="registration_no" placeholder="Registration number" required />
+            <button type="submit">Register</button>
+          </form>
+        </section>
+
+        <section class="panel">
+          <h2>Volunteer Application</h2>
+          <form id="volunteerForm">
+            <select id="volunteerEventSelect" name="event_id" required></select>
+            <select id="volunteerCompetitionSelect" name="competition_id" required></select>
+            <input type="text" name="name" placeholder="Volunteer name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="phone" placeholder="Phone" required />
+            <input type="text" name="preferred_role" placeholder="Preferred role" required />
+            <textarea name="skills" placeholder="Skills / availability" required></textarea>
+            <button type="submit">Apply</button>
+          </form>
+        </section>
+      </main>
+
+      <section class="panel overview-panel">
+        <h2>Event Overview</h2>
+        <div class="event-action-row filter-row">
+          <select id="overviewEventFilter"></select>
+          <select id="overviewCompetitionFilter"></select>
+          <button id="clearOverviewFilter" type="button" class="secondary">Clear</button>
+        </div>
+        <div id="eventBreakdownChart" class="event-chart"></div>
+      </section>
+
+      <section class="panel lists-panel">
+        <div class="list-section">
+          <h2>Recent Participants</h2>
+          <div id="participantList" class="record-list"></div>
+        </div>
+        <div class="list-section">
+          <h2>Recent Volunteers</h2>
+          <div id="volunteerList" class="record-list"></div>
+        </div>
+      </section>
+
+      <section class="panel event-management-panel">
+        <h2>Event Management</h2>
+        <div class="event-action-row">
+          <select id="eventDeleteSelect"></select>
+          <button id="deleteEventBtn" type="button">Delete Selected Event</button>
+        </div>
+      </section>
+
+      <section class="panel update-panel">
+        <h2>Competition Update</h2>
+        <div class="event-action-row">
+          <select id="updateCompetitionEventSelect"></select>
+          <select id="updateCompetitionSelect"></select>
+        </div>
+        <form id="competitionUpdateForm">
+          <input type="text" id="updateCompetitionName" placeholder="Updated competition name" />
+          <input type="number" id="updateCompetitionCapacity" min="1" placeholder="Updated capacity" />
+          <textarea id="updateCompetitionRules" placeholder="Updated competition rules"></textarea>
+          <button type="submit">Update Competition</button>
+        </form>
+      </section>
+
+      <section class="panel assignment-panel">
+        <h2>Volunteer Assignment</h2>
+        <div class="event-action-row">
+          <select id="assignmentEventSelect"></select>
+          <select id="assignmentCompetitionSelect"></select>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Skills</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="volunteerAssignmentTable"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel export-panel">
+        <h2>Reports</h2>
+        <div class="event-action-row">
+          <select id="reportEventSelect"></select>
+          <select id="reportCompetitionSelect"></select>
+          <button id="exportParticipantsCsv" type="button">Export Participant CSV</button>
+          <button id="exportParticipantsXlsx" type="button">Export Participant XLSX</button>
+          <button id="exportVolunteersCsv" type="button">Export Volunteer CSV</button>
+          <button id="exportVolunteersXlsx" type="button">Export Volunteer XLSX</button>
+          <button id="exportCombinedXlsx" type="button">Export Combined XLSX</button>
+        </div>
+      </section>
+
+      <section class="panel chat-panel">
+        <div class="chat-header">
+          <h2>Competition Rules & Chat</h2>
+        </div>
+        <div class="chat-controls">
+          <select id="chatEventSelect" required></select>
+          <select id="chatCompetitionSelect" required></select>
+        </div>
+        <div class="rules-box" id="rulesBox">Select a competition to view its rules.</div>
+        <div class="chat-box" id="chatBox"></div>
+        <form id="chatForm" class="chat-form">
+          <select id="chatSenderRole" required>
+            <option value="coordinator">Coordinator</option>
+            <option value="participant">Participant</option>
+          </select>
+          <input type="text" id="chatSenderName" placeholder="Your name" required />
+          <textarea id="chatMessage" placeholder="Type your message for the coordinator or participants..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <section class="panel records-panel">
+        <h2>All Records</h2>
+        <div class="search-row">
+          <input id="recordSearchInput" type="text" placeholder="Search by name, email, role, or event" />
+        </div>
+        <div class="table-wrap">
+          <h3>Participants</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Event</th>
+                <th>Competition</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="allParticipantsTable"></tbody>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <h3>Volunteers</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Role</th>
+                <th>Assignment</th>
+                <th>Event</th>
+                <th>Competition</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="allVolunteersTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
