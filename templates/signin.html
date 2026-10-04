@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in | SIEMPro</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body class="public-page auth-page signin-page">
+    <div class="public-shell auth-shell">
+      <header class="public-header auth-header">
+        <a class="back-home" href="/">← <span>Back to home</span></a>
+        <a class="wordmark" href="/" aria-label="SIEMPro home">SIEM<span>Pro</span></a>
+        <a class="header-join" href="/signup">Create account <span aria-hidden="true">↗</span></a>
+      </header>
+      <main class="auth-layout">
+        <section class="auth-brand-panel" aria-label="SIEMPro event community">
+          <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1400&q=85" alt="Lights illuminating a live event crowd" />
+          <div class="auth-brand-shade"></div>
+          <div class="auth-brand-content"><p class="stage-kicker"><span></span> THE CAMPUS EVENT EXPERIENCE</p><div class="auth-brand-name">SIEM<span>Pro</span></div><p>Good to have you back.<br />Your campus is waiting.</p></div>
+          <div class="auth-brand-bottom"><span>DISCOVER · PARTICIPATE · CREATE</span><span>02 / 03</span></div>
+        </section>
+        <section class="auth-form-panel">
+          <div class="auth-form-heading"><p class="section-kicker">YOUR CAMPUS, CONNECTED</p><h1>Welcome back.</h1><p>Sign in to pick up where your next event begins.</p></div>
+          <form id="loginForm" class="auth-form">
+            <label for="loginUsername">Email or username</label><input type="text" id="loginUsername" placeholder="you@example.com" autocomplete="username" required />
+            <label for="loginPassword">Password</label><div class="password-field"><input type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password" required /><button type="button" class="password-toggle" data-password-target="loginPassword" aria-label="Show password">Show</button></div>
+            <button class="auth-submit" type="submit">Sign in <span aria-hidden="true">↗</span></button>
+            <p class="auth-note">New to SIEMPro? <a href="/signup">Create an account</a></p>
+          </form>
+          <p class="auth-footnote"><span aria-hidden="true">✳</span> One campus. A thousand ways to take part.</p>
+        </section>
+      </main>
+    </div>
+    <script src="/static/auth.js"></script>
+  </body>
+</html>

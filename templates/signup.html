@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create account | SIEMPro</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body class="public-page auth-page signup-page">
+    <div class="public-shell auth-shell">
+      <header class="public-header auth-header">
+        <a class="back-home" href="/">← <span>Back to home</span></a>
+        <a class="wordmark" href="/" aria-label="SIEMPro home">SIEM<span>Pro</span></a>
+        <a class="header-join" href="/signin">Sign in <span aria-hidden="true">↗</span></a>
+      </header>
+      <main class="auth-layout signup-layout">
+        <section class="auth-brand-panel" aria-label="SIEMPro event community">
+          <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1400&q=85" alt="A crowd celebrating together at a live event" />
+          <div class="auth-brand-shade"></div>
+          <div class="auth-brand-content"><p class="stage-kicker"><span></span> THE CAMPUS EVENT EXPERIENCE</p><div class="auth-brand-name">SIEM<span>Pro</span></div><p>Make your mark.<br />Make the moment.</p></div>
+          <div class="auth-brand-bottom"><span>DISCOVER · PARTICIPATE · CREATE</span><span>03 / 03</span></div>
+        </section>
+        <section class="auth-form-panel">
+          <div class="auth-form-heading"><p class="section-kicker">YOUR NEXT CHAPTER STARTS HERE</p><h1>Find your place.</h1><p>Create an account and get closer to everything happening on campus.</p></div>
+          <form id="signupForm" class="auth-form">
+            <fieldset class="role-options">
+              <legend>Choose how you’ll take part</legend>
+              <div class="role-choice-grid">
+                <label class="role-option"><input type="radio" name="signupRole" value="participant" checked required /><span class="role-option-copy"><strong>Participant</strong><small>Join events and competitions</small></span></label>
+                <label class="role-option"><input type="radio" name="signupRole" value="volunteer" /><span class="role-option-copy"><strong>Volunteer</strong><small>Support the event team</small></span></label>
+              </div>
+            </fieldset>
+            <label for="signupUsername">Email address</label><input type="email" id="signupUsername" placeholder="you@example.com" autocomplete="email" required />
+            <label for="signupPassword">Create password</label><div class="password-field"><input type="password" id="signupPassword" placeholder="At least 6 characters" autocomplete="new-password" required /><button type="button" class="password-toggle" data-password-target="signupPassword" aria-label="Show password">Show</button></div>
+            <label for="signupPasswordConfirm">Confirm password</label><input type="password" id="signupPasswordConfirm" placeholder="Type password again" autocomplete="new-password" required />
+            <button class="auth-submit" type="submit">Create your account <span aria-hidden="true">↗</span></button>
+            <p class="auth-note">Already registered? <a href="/signin">Sign in</a></p>
+          </form>
+          <p class="auth-footnote"><span aria-hidden="true">✳</span> One campus. A thousand ways to take part.</p>
+        </section>
+      </main>
+    </div>
+    <script src="/static/auth.js"></script>
+  </body>
+</html>
