@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: siempro
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    region: oregon
+    envVars:
+      - key: SIEMPRO_ENV
+        value: production
+      - key: SIEMPRO_SECRET_KEY
+        generateValue: true
+      - key: SIEMPRO_ADMIN_USERNAME
+        value: admin
+      - key: SIEMPRO_ADMIN_PASSWORD
+        generateValue: true
